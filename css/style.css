@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body {
+    background-color: #decdbe;
+}
+
+.menu {
+    background-color: #c9ad94;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+    padding: 0.5rem 1rem;
+}
+
+.menu-nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    position: relative;
+}
+
+.menu-nav ul li {
+    position: relative;
+}
+
+.menu-nav ul li a {
+    color: #463424;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+.menu-nav ul li:hover > a {
+    background-color: ;
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 20vw;
+    background-color: #decdbe;
+    display: none;
+    padding: 2rem 10%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    animation: slideDown 0.4s ease forwards;
+    z-index: 999;
+}
+
+@keyframes slideDown {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu ul {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    padding: 0.5rem;
+    gap: 2rem;
+}
+
+.dropdown-menu ul li {
+    list-style: none;
+}
+
+.dropdown-menu ul li a {
+    font-size: 0.9rem;
+    color: #463424;
+    font-weight: 500;
+    padding: 0.5rem 0;
+    display: block;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.dropdown-menu ul li a:hover {
+    color: #826142;
+}
+
+.intro {
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-image: url(/img/oladipo-adejumo-oL3cNYKY3yU-unsplash.jpg);
+}
+
+.intro-section {
+    height: 90vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.intro-section-title {
+    color: #decdbe;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.intro-section-text {
+    color: #decdbe;
+    float: right;
+    font-size: 2rem;
+    font-weight: 800;
+    transform: translateY(17rem);
+}
+
+.darkest-sand {
+     color: #463424; 
+}
+.darker-sand {
+     color: #826142; 
+}
+.white {
+     color: #decdbe; 
+}
+.dark-sand {
+     color: #ae8560; 
+}
+.sand {
+     color: #c9ad94; 
+}
