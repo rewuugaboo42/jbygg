@@ -7,6 +7,8 @@
 
 body {
   background-color: #decdbe;
+  overflow-x: hidden;
+  user-select: none;
 }
 
 .menu {
@@ -102,13 +104,6 @@ body {
   font-weight: 800;
 }
 
-.intro-section-text {
-  color: #decdbe;
-  font-size: 2rem;
-  font-weight: 800;
-  transform: translateY(12rem);
-}
-
 .mobile-menu {
   height: 100vh;
   width: 250px;
@@ -154,8 +149,8 @@ body {
 
 .mobile-nav-icon {
   display: none;
-  width: 30px;
-  height: 30px;
+  width: 36px;
+  height: 36px;
   cursor: pointer;
 }
 
@@ -182,6 +177,13 @@ body {
   .mobile-nav-icon {
     display: block;
   }
+
+  .intro-section-text {
+    color: #decdbe;
+    font-size: 2rem;
+    font-weight: 800;
+    transform: translateY(10rem);
+  }
 }
 
 @media (min-width: 769px) {
@@ -189,6 +191,57 @@ body {
   .mobile-nav-icon {
     display: none;
   }
+
+  .intro-section-text {
+    color: #decdbe;
+    font-size: 2rem;
+    font-weight: 800;
+    transform: translateY(12rem);
+  }
+}
+
+.image-section {
+  width: 100vw;
+  height: 100vh;
+  background-color: #ae8560;
+}
+
+#image-track {
+  display: flex;
+  gap: 4vmin;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(0%, 130%);
+}
+
+#image-track > .image {
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: 100% 50%;
+}
+
+#image-section-text {
+  padding: 2rem 1rem;
+  color: #463424;
+}
+
+.about {
+  width: 100vw;
+  height: 30vh;
+  background-color: #222;
+  transform: translateY(90vh);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #decdbe;
+}
+
+.about-section {
+  color: #decdbe;
 }
 
 .darkest-sand {
@@ -205,4 +258,11 @@ body {
 }
 .white {
   color: #decdbe;
+}
+
+.montserrat {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
 }
