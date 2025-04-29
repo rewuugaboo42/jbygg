@@ -427,13 +427,87 @@ body {
   gap: 1rem;
 }
 
+.reference-projects {
+  min-height: 100vh;
+  background-color: #decdbe;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.reference-text {
+  color: #463424;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.reference-description {
+  padding-bottom: 2rem;
+  padding-top: 0.5rem;
+  color: #826142;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.comic-storyboard {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 200px;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.comic-panel {
+  background-color: #fff;
+  border: 5px solid #000;
+  box-shadow: 5px 5px 0 #000;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.comic-panel img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.panel-1 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.panel-2 {
+  grid-column: span 3;
+  grid-row: span 2;
+}
+
+.panel-3 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.panel-4 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.panel-5 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.panel-6 {
+  grid-column: span 6;
+  grid-row: span 3;
+}
+
 .project-icon {
   width: 36px;
   height: 36px;
-}
-
-.project-text {
-
 }
 
 .darkest-sand {
