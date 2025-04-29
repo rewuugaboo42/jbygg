@@ -184,6 +184,10 @@ body {
     font-weight: 800;
     transform: translateY(10rem);
   }
+
+  .person {
+    height: auto;
+  }
 }
 
 @media (min-width: 769px) {
@@ -198,6 +202,11 @@ body {
     font-weight: 800;
     transform: translateY(12rem);
   }
+
+  .person {
+    height: 88vh;
+  }
+  
 }
 
 .image-section {
@@ -227,7 +236,7 @@ body {
   color: #463424;
 }
 
-.about {
+.about-main {
   width: 100vw;
   height: 30vh;
   background-color: #222;
@@ -238,6 +247,20 @@ body {
   padding-left: 1rem;
   padding-right: 1rem;
   color: #decdbe;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about {
+  width: 100vw;
+  height: 30vh;
+  background-color: #222;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #decdbe;
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.5);
 }
 
 .about-section {
@@ -246,7 +269,6 @@ body {
 
 .person {
   width: 100vw;
-  height: 88vh;
   background-color: #decdbe;
   display: flex;
   justify-content: space-around;
@@ -293,8 +315,57 @@ body {
 
 .project-standards {
   width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background-color: #222;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+  padding: 2rem;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.project-standards section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 500px;
+  color: #decdbe;
+  gap: 1rem;
+  text-align: left;
+}
+
+.project-text h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-text h2 {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #c9ad94;
+}
+
+.project-standard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 8px;
+  max-width: 300px;
+  flex: 1 1 300px;
+  color: #decdbe;
+  gap: 1rem;
+}
+
+.project-icon {
+  width: 36px;
+  height: 36px;
+}
+
+.project-text {
+
 }
 
 .darkest-sand {
